@@ -869,7 +869,7 @@ version_to_tag() {
 
 asset_url_from_tag() {
   tag="$1"
-  simadmin_asset_name="$(resolve_simadmin_asset_name "$tag")"
+  archive_asset_name="$(resolve_simadmin_asset_name "$TARGET_TAG")"
   printf 'https://github.com/%s/releases/download/%s/%s\n' "$REPO" "$tag" "$simadmin_asset_name"
 }
 
